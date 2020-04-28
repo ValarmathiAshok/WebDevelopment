@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { ProductAlertsComponent } from './product-list/product-alerts/product-alerts.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
    RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ]) ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, TopBarComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
