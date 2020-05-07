@@ -7,13 +7,15 @@ import { HelloComponent } from './hello.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductAlertsComponent } from './product-list/product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
    RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
     ]) ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
