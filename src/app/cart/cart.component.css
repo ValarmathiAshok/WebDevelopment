@@ -1,1 +1,12 @@
 
+.cart-item
+{
+  padding: 8px 16px;
+  margin: 2px;
+  margin-bottom:10px;
+  border-radius:2px;
+  align-items: center;
+  color: white;
+  background-color:rgb(156, 179, 247);
+  border:none;
+}
