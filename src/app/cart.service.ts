@@ -23,11 +23,11 @@ export class CartService {
   {
    // window.alert("ind");
    //window.alert(this.http.get('/assets/shipping.json'));
-   this.items=this.http.get('/assets/shipping.json');
-    for(var item of this.items)
+  // this.items=this.http.get('/assets/shipping.json');
+   /* for(var item of this.items)
     {
       window.alert(item.type);
-    }
+    }*/
     return this.http.get('/assets/shipping.json');
   }
 }

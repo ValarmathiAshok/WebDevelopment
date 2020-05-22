@@ -9,16 +9,18 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductAlertsComponent } from './product-list/product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CartComponent } from './cart/cart.component'
+import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule,
    RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      {path : 'cart',component:CartComponent},
+      { path : 'cart',component:CartComponent},
+      { path : 'shipping',component:ShippingComponent},
     ]) ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, TopBarComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent, ShippingComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
