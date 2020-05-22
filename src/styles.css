@@ -124,5 +124,10 @@ app-top-bar h1 {
   border: none;
 }
 .shipping-item{
+  color: white;
   background-color:lightblue;
+  margin:10px;
+  padding:8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
 }
