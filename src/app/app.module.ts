@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms'
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -13,7 +14,7 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component'
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule,
+  imports:      [ BrowserModule, FormsModule,HttpClientModule,ReactiveFormsModule,
    RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
